@@ -3,65 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags Div & Span</title>
-
-    <style type="text/css">
-        h1 {
-            color: green;
+    <title>Div & Span</title>
+    <style>
+        #topo {
+            background: blue;
         }
-        p {
-            color: red;
+        #conteudo {
+            background: red;
         }
-
-        .azul {
-            color: blue;
-        }
-
-        #cabecalho {
+        #rodape {
             background: green;
         }
-
+        .produto {
+            background: gray;
+            margin: 10px;
+        }
+        .azul {
+            background: blue;
+        }
     </style>
-
 </head>
 <body>
-    <div>
-        <div id="cabecalho">
-            <img src="imagens/logo.png">
-            <ul>
-                <li>Home</li>
-                <li>Quem somos</li>
-                <li>Contato</li>
-            </ul>
+    <div id="topo">
+        <img src="imagens/amazon.png" alt="Logo da Amazon" width="200">
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+    <div id="conteudo">
+        <div class="produto">
+            Produto 1
         </div>
-        <div id="conteudo-principal">
-            <div class="coluna">
-                Coluna 1
-            </div>
-            <div class="coluna">
-                Coluna 2
-            </div>
-            <div class="coluna">
-                Coluna 3
-            </div>
+        <div class="produto">
+            Produto 2
+        </div>
+        <div class="produto">
+            Produto 3
         </div>
     </div>
-
-
-    <h1 class="azul">Estilo CSS (cascading style sheets)</h1>
-    <p class="azul">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore amet voluptate tempore error beatae nisi fugit totam deserunt minima. Eveniet commodi quam obcaecati consequatur eaque esse earum minus exercitationem fuga!
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus neque, accusantium quod modi, commodi perferendis impedit repellendus obcaecati debitis, placeat quo molestiae totam provident reprehenderit laboriosam amet facilis assumenda.
-    </p>
-    <hr>
-    <h1>Formatações</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore amet voluptate tempore error beatae nisi fugit totam deserunt minima. Eveniet commodi quam obcaecati consequatur eaque esse earum minus exercitationem fuga!
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus neque, accusantium quod modi, commodi perferendis impedit repellendus obcaecati debitis, placeat quo molestiae totam provident reprehenderit laboriosam amet facilis assumenda.
-    </p>
-</body>
+    <div id="rodape">
+        Todos os <span class="azul">direitos</span> reservados
+    </div>
 </html>
